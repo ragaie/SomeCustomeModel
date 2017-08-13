@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Arabic"; ObjectID = "3Xb-QN-Bw2"; */
+"3Xb-QN-Bw2.normalTitle" = "Ar";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "8uM-UX-yAe"; */
+"8uM-UX-yAe.normalTitle" = "En";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Ojp-cr-Z10"; */
+"Ojp-cr-Z10.title" = "Item";
+
+/* Class = "UILabel"; text = "welcome to your application"; ObjectID = "k4A-6m-60Y"; */
+"k4A-6m-60Y.text" = "welcome to your application";

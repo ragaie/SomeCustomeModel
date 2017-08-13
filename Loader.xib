@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Loader" customModule="SomeWorkTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="67" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJN-ad-qKZ">
+                    <rect key="frame" x="3.5" y="50" width="60.5" height="28"/>
+                    <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aPk-NR-26v">
+                    <rect key="frame" x="15" y="12" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.22064875066280365" green="0.45981743931770325" blue="0.83457028865814209" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="ZJN-ad-qKZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3.5" id="I1Q-CV-GZh"/>
+                <constraint firstItem="aPk-NR-26v" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="h5F-P0-s1h"/>
+                <constraint firstItem="ZJN-ad-qKZ" firstAttribute="top" secondItem="aPk-NR-26v" secondAttribute="top" constant="38" id="iaY-pu-toP"/>
+                <constraint firstAttribute="trailing" secondItem="ZJN-ad-qKZ" secondAttribute="trailing" constant="3" id="mqc-Wg-7XE"/>
+                <constraint firstItem="aPk-NR-26v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="xkm-at-nIZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="9"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="activityIndecator" destination="aPk-NR-26v" id="Nfi-gU-J6D"/>
+                <outlet property="lableText" destination="ZJN-ad-qKZ" id="aPa-ZT-BDf"/>
+            </connections>
+            <point key="canvasLocation" x="-18.5" y="-57.5"/>
+        </view>
+    </objects>
+</document>

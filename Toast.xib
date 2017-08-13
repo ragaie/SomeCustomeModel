@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ToastView" customModule="SomeWorkTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="227" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rb-1B-Yat">
+                    <rect key="frame" x="19" y="8" width="191" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFk-lV-FUf">
+                    <rect key="frame" x="8" y="35.5" width="211" height="29.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.10980392160000001" green="0.67843137249999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PFk-lV-FUf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5Gb-tz-s8y"/>
+                <constraint firstItem="0rb-1B-Yat" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="DeF-jn-W31"/>
+                <constraint firstItem="0rb-1B-Yat" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Iks-Hj-VXF"/>
+                <constraint firstItem="PFk-lV-FUf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="R8L-42-PcY"/>
+                <constraint firstAttribute="bottom" secondItem="PFk-lV-FUf" secondAttribute="bottom" constant="11" id="TdJ-OM-yWA"/>
+                <constraint firstItem="0rb-1B-Yat" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="nnG-xl-aIL"/>
+                <constraint firstItem="PFk-lV-FUf" firstAttribute="top" secondItem="0rb-1B-Yat" secondAttribute="bottom" constant="8" id="oZB-35-ZuS"/>
+                <constraint firstAttribute="trailing" secondItem="0rb-1B-Yat" secondAttribute="trailing" constant="17" id="p6K-zr-aFD"/>
+                <constraint firstAttribute="trailing" secondItem="PFk-lV-FUf" secondAttribute="trailing" constant="8" id="zL7-kH-UFz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Iks-Hj-VXF"/>
+                    <exclude reference="5Gb-tz-s8y"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="messageView" destination="PFk-lV-FUf" id="4MT-ZI-UpF"/>
+                <outlet property="titleLable" destination="0rb-1B-Yat" id="llo-A1-L67"/>
+            </connections>
+            <point key="canvasLocation" x="230.5" y="71"/>
+        </view>
+    </objects>
+</document>

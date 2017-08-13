@@ -16,6 +16,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        // change select background color
+//        let colorView = UIView()
+//        colorView.backgroundColor = UIColor.white
+//        
+//        // use UITableViewCell.appearance() to configure
+//        // the default appearance of all UITableViewCells in your app
+//        UITableViewCell.appearance().selectedBackgroundView = colorView
+
+        
+        if ((UserDefaults.standard.object(forKey: "AppleLanguages") as! NSArray)[0] as! String).contains("en") {
+            languageManger.setLaguageOfApplication(lang: "en")
+            
+            
+        }
+ 
+        
+        /// to change back button image
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "arrowL")
+        
+        
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "arrowL")
         return true
     }
 

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DatePikerView" customModule="SomeWorkTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="175"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCh-OY-xrI">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="39"/>
+                    <color key="backgroundColor" red="0.0" green="0.58851617574691772" blue="0.93119394779205322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="FdL-tb-gbs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8So-mu-FnJ">
+                    <rect key="frame" x="8" y="6" width="57" height="24"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Yph-Sd-1jB"/>
+                        <constraint firstAttribute="width" constant="57" id="nc0-kb-f3g"/>
+                    </constraints>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6u-R2-Y7F">
+                    <rect key="frame" x="236" y="6" width="56" height="25"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="QXK-yK-Rsn"/>
+                        <constraint firstAttribute="height" constant="25" id="oW1-hT-gox"/>
+                    </constraints>
+                    <state key="normal" title="Done"/>
+                </button>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ykw-sm-iwr">
+                    <rect key="frame" x="0.0" y="38" width="300" height="137"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="51e-Eh-wgU"/>
+                        <constraint firstAttribute="height" constant="137" id="tAs-zB-erN"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="500130066.848894">
+                        <!--2016-11-06 13:01:06 +0000-->
+                    </date>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="51e-Eh-wgU"/>
+                        </mask>
+                    </variation>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="t6u-R2-Y7F" secondAttribute="trailing" constant="9" id="6Ec-IX-Aa5"/>
+                <constraint firstItem="t6u-R2-Y7F" firstAttribute="centerX" secondItem="xCh-OY-xrI" secondAttribute="centerX" multiplier="1.75" id="6zh-JV-Tt5"/>
+                <constraint firstItem="t6u-R2-Y7F" firstAttribute="leading" secondItem="xCh-OY-xrI" secondAttribute="trailing" constant="-64" id="CYj-FZ-mmF"/>
+                <constraint firstItem="Ykw-sm-iwr" firstAttribute="centerX" secondItem="xCh-OY-xrI" secondAttribute="centerX" id="ChC-5M-EA9"/>
+                <constraint firstItem="t6u-R2-Y7F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="236" id="Jtp-Mp-VzQ"/>
+                <constraint firstItem="t6u-R2-Y7F" firstAttribute="trailing" secondItem="xCh-OY-xrI" secondAttribute="trailing" id="K18-cj-hM2"/>
+                <constraint firstItem="t6u-R2-Y7F" firstAttribute="trailing" secondItem="xCh-OY-xrI" secondAttribute="trailing" constant="-9" id="Nhc-dZ-lW9"/>
+                <constraint firstItem="t6u-R2-Y7F" firstAttribute="top" secondItem="xCh-OY-xrI" secondAttribute="top" constant="10" id="RDK-8E-0HU"/>
+                <constraint firstAttribute="trailing" secondItem="xCh-OY-xrI" secondAttribute="trailing" id="S25-JR-ryz"/>
+                <constraint firstItem="8So-mu-FnJ" firstAttribute="centerX" secondItem="xCh-OY-xrI" secondAttribute="centerX" multiplier="0.25" constant="-1" id="S3E-yl-70q"/>
+                <constraint firstItem="Ykw-sm-iwr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TkP-ne-5Nc"/>
+                <constraint firstAttribute="trailing" secondItem="Ykw-sm-iwr" secondAttribute="trailing" id="U5b-8T-nFK"/>
+                <constraint firstItem="Ykw-sm-iwr" firstAttribute="top" secondItem="xCh-OY-xrI" secondAttribute="bottom" constant="-1" id="XoM-U1-HN8"/>
+                <constraint firstItem="8So-mu-FnJ" firstAttribute="leading" secondItem="xCh-OY-xrI" secondAttribute="leading" constant="8" id="aVI-Tg-3G4"/>
+                <constraint firstItem="xCh-OY-xrI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bq2-2c-ucZ"/>
+                <constraint firstItem="xCh-OY-xrI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cD4-db-Pn1"/>
+                <constraint firstItem="Ykw-sm-iwr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d6S-C3-kF2"/>
+                <constraint firstItem="xCh-OY-xrI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ixT-ip-ysY"/>
+                <constraint firstItem="8So-mu-FnJ" firstAttribute="top" secondItem="xCh-OY-xrI" secondAttribute="top" constant="6" id="lnO-bO-EMX"/>
+                <constraint firstAttribute="trailing" secondItem="Ykw-sm-iwr" secondAttribute="trailing" id="s5q-jy-e4t"/>
+                <constraint firstItem="t6u-R2-Y7F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.75" id="sTF-Ze-hBX"/>
+                <constraint firstItem="t6u-R2-Y7F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="tNb-OO-lzc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ixT-ip-ysY"/>
+                    <exclude reference="S3E-yl-70q"/>
+                    <exclude reference="ChC-5M-EA9"/>
+                    <exclude reference="TkP-ne-5Nc"/>
+                    <exclude reference="U5b-8T-nFK"/>
+                    <exclude reference="6Ec-IX-Aa5"/>
+                    <exclude reference="6zh-JV-Tt5"/>
+                    <exclude reference="Jtp-Mp-VzQ"/>
+                    <exclude reference="K18-cj-hM2"/>
+                    <exclude reference="Nhc-dZ-lW9"/>
+                    <exclude reference="RDK-8E-0HU"/>
+                    <exclude reference="sTF-Ze-hBX"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="GetDate" destination="t6u-R2-Y7F" id="EAg-lm-Dwt"/>
+                <outlet property="cancel" destination="8So-mu-FnJ" id="HM2-9l-YOp"/>
+                <outlet property="headerLabel" destination="xCh-OY-xrI" id="a65-IA-Tos"/>
+                <outlet property="pickerDateView" destination="Ykw-sm-iwr" id="XY7-or-n4y"/>
+            </connections>
+            <point key="canvasLocation" x="219" y="89.5"/>
+        </view>
+    </objects>
+</document>

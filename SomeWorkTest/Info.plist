@@ -2,6 +2,43 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>andlso.ttf</string>
+		<string>arab3end.ttf</string>
+		<string>ArabDances.ttf</string>
+		<string>ARABIAN KNIGHT.ttf</string>
+		<string>ARABOLIC.ttf</string>
+		<string>BArabics.ttf</string>
+		<string>BArshia.ttf</string>
+		<string>BCompset.ttf</string>
+		<string>BDavat.ttf</string>
+		<string>BElham.ttf</string>
+		<string>BEsfhnBd.ttf</string>
+		<string>Besmellah_2.ttf</string>
+		<string>BFantezy.ttf</string>
+		<string>AfaratibnBlady.ttf</string>
+		<string>BFerdosi.ttf</string>
+		<string>BJadidBd.ttf</string>
+		<string>BKoodakO.ttf</string>
+		<string>Diwanltr.ttf</string>
+		<string>Taibaijan.ttf</string>
+		<string>Taibaijan Italic.ttf</string>
+		<string>Taibaijan.ttf</string>
+		<string>Thabit.ttf</string>
+		<string>Besmellah_2.ttf</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>need to use camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>need to acess gallary</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
