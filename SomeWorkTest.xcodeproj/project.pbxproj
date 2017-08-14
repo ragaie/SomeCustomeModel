@@ -34,6 +34,7 @@
 		813364FD1F31DB540032E5D3 /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813364FC1F31DB540032E5D3 /* Notify.swift */; };
 		8136A60E1F13CFB700D776D0 /* RatingBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8136A60D1F13CFB700D776D0 /* RatingBar.xib */; };
 		8136A6121F13D18800D776D0 /* RatingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136A6111F13D18800D776D0 /* RatingBar.swift */; };
+		813A5EE21F419D5300A37E2B /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A5EE11F419D5300A37E2B /* KeychainService.swift */; };
 		8164EE011EC9A1AC00086D95 /* GestureRecognizersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8164EE001EC9A1AC00086D95 /* GestureRecognizersView.swift */; };
 		816F004F1F3081A900EFDA11 /* tableContainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F004E1F3081A900EFDA11 /* tableContainCell.swift */; };
 		8171E8C51EC865CF0085BC8A /* GifAnimateViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171E8C41EC865CF0085BC8A /* GifAnimateViewViewController.swift */; };
@@ -134,6 +135,7 @@
 		813364FC1F31DB540032E5D3 /* Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
 		8136A60D1F13CFB700D776D0 /* RatingBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingBar.xib; sourceTree = "<group>"; };
 		8136A6111F13D18800D776D0 /* RatingBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingBar.swift; sourceTree = "<group>"; };
+		813A5EE11F419D5300A37E2B /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		8164EE001EC9A1AC00086D95 /* GestureRecognizersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureRecognizersView.swift; sourceTree = "<group>"; };
 		816F004E1F3081A900EFDA11 /* tableContainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableContainCell.swift; sourceTree = "<group>"; };
 		8171E8C41EC865CF0085BC8A /* GifAnimateViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifAnimateViewViewController.swift; sourceTree = "<group>"; };
@@ -272,6 +274,15 @@
 			name = "sperate component";
 			sourceTree = "<group>";
 		};
+		813A5EE01F419D1A00A37E2B /* share data and save in keychain */ = {
+			isa = PBXGroup;
+			children = (
+				818248E31EDC280400394B76 /* ShareData.swift */,
+				813A5EE11F419D5300A37E2B /* KeychainService.swift */,
+			);
+			name = "share data and save in keychain";
+			sourceTree = "<group>";
+		};
 		8164EDFE1EC9A14B00086D95 /* another library */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,8 +354,8 @@
 		818248E51EDC296700394B76 /* share Data */ = {
 			isa = PBXGroup;
 			children = (
+				813A5EE01F419D1A00A37E2B /* share data and save in keychain */,
 				8183CD3C1EDD960600667A18 /* show some animation */,
-				818248E31EDC280400394B76 /* ShareData.swift */,
 				8183CD3A1EDD7FC000667A18 /* ApperanceViewController.swift */,
 			);
 			name = "share Data";
@@ -789,6 +800,7 @@
 				818D4A811EC31AF700652A18 /* SingleClass.swift in Sources */,
 				81AAC7871F2F8A4700BD7B07 /* ExpandTablelController.swift in Sources */,
 				81DB2F561F123A400087C7C2 /* DropDownView.swift in Sources */,
+				813A5EE21F419D5300A37E2B /* KeychainService.swift in Sources */,
 				8183CD441EDD97C500667A18 /* HomeAnimatorView.swift in Sources */,
 				81B8D9861EC4672F00210399 /* VedioPlayerView.swift in Sources */,
 				81AAC7891F2F8A5B00BD7B07 /* ExpandTablelModel.swift in Sources */,

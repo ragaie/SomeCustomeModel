@@ -14,6 +14,22 @@ class ShareData: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
 
     @IBOutlet weak var shareData: UIButton!
+    
+    
+    
+    @IBOutlet weak var passwordEnter: UITextField!
+    
+    
+    
+    
+    
+    @IBOutlet weak var passwordLoad: UITextField!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -126,6 +142,40 @@ class ShareData: UIViewController {
         // present the view controller
         self.present(activityViewController, animated: true, completion: nil)
     }
+    
+    
+    
+    
+    
+    @IBAction func savePassword(_ sender: Any) {
+        
+        
+       if  passwordEnter.text != nil {
+        
+                KeychainService.savePassword(token: passwordEnter.text as! NSString)
+
+        }
+        
+        
+        
+    }
+    
+    
+    @IBAction func loadPassword(_ sender: Any) {
+        
+        
+        let password = KeychainService.loadPassword() // password = "Pa55worD"
+
+        if password != nil {
+        
+                passwordLoad.text = password as! String
+        
+        }
+        
+        
+    }
+    
+    
     
     
 
