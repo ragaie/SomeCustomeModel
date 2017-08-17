@@ -31,6 +31,8 @@ let kSecMatchLimitValue = NSString(format: kSecMatchLimit)
 let kSecReturnDataValue = NSString(format: kSecReturnData)
 let kSecMatchLimitOneValue = NSString(format: kSecMatchLimitOne)
 
+
+
 public class KeychainService: NSObject {
     
     /**
@@ -62,10 +64,14 @@ public class KeychainService: NSObject {
         SecItemAdd(keychainQuery as CFDictionary, nil)
     }
     
+    
+    
+    
     private class func load(service: NSString) -> NSString? {
         // Instantiate a new default keychain query
         // Tell the query to return a result
         // Limit our results to one item
+        
         let keychainQuery: NSMutableDictionary = NSMutableDictionary(objects: [kSecClassGenericPasswordValue, service, userAccount, kCFBooleanTrue, kSecMatchLimitOneValue], forKeys: [kSecClassValue, kSecAttrServiceValue, kSecAttrAccountValue, kSecReturnDataValue, kSecMatchLimitValue])
         
         var dataTypeRef :AnyObject?
@@ -84,4 +90,7 @@ public class KeychainService: NSObject {
         
         return contentsOfKeychain
     }
+    
+    
+    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DropDownView: UIViewController ,DropDownDelegate,RatingBarDelegate,PickerListDelegate{
+class DropDownView: UIViewController ,DropDownDelegate,RatingBarDelegate,PickerListDelegate,SearchBarDelegate,SearchTextDelegate{
     @IBOutlet weak var menuButton: UIBarButtonItem!
 
     @IBOutlet weak var dropDownButton: DropDown!
@@ -22,8 +22,17 @@ class DropDownView: UIViewController ,DropDownDelegate,RatingBarDelegate,PickerL
     
     
     
+    @IBOutlet weak var customSearchBar: SearchBar!
+    
+    
+    
+    
+    @IBOutlet weak var searchtextCustome: SearchText!
+    
     
     var items = ["dfdf","ddgdgdg","dfgdg","dfgdfg","dfgdfg","dfgdgerert","dfdf","ddgdgdg","dfgdg","dfgdfg","dfgdfg","dfgdgerert"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,6 +49,10 @@ class DropDownView: UIViewController ,DropDownDelegate,RatingBarDelegate,PickerL
         
         ratingBarView.delegate = self
 
+        searchtextCustome.delegate = self
+        searchtextCustome.dataSourceItem = items
+        customSearchBar.delegate = self
+        customSearchBar.dataSourceItem = items
         pickerList.delegate = self
         pickerList.dataSourceItem = items
     }
@@ -66,7 +79,21 @@ class DropDownView: UIViewController ,DropDownDelegate,RatingBarDelegate,PickerL
     }
   
     
+    func searchBar(_ searchBar: SearchBar, didSelectRowAt row: Int) {
     
+        
+        print(items[row])
+        
+        
+    }
+    
+    
+    
+    func searchText(_ searchText: SearchText, didSelectRowAt row: Int) {
+        print(items[row])
+
+        
+    }
     
     @IBAction func showPicker(_ sender: Any) {
         

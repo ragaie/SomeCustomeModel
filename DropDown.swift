@@ -43,6 +43,14 @@ protocol DropDownDelegate {
     private  var showDrop : Bool! = false
     
     public var ID : String! = "DropDown"
+    
+    var dataSourceItem : [Any]! = []/// ["ghjghjghjhj","etertret","fsfsfs"]
+    var delegate : DropDownDelegate!
+    
+    
+    
+    
+    
     @IBInspectable var RestorationId : String!{
         didSet {
             
@@ -52,11 +60,7 @@ protocol DropDownDelegate {
     }
     
     
-    var dataSourceItem : [Any]! = []/// ["ghjghjghjhj","etertret","fsfsfs"]
-    var delegate : DropDownDelegate!
-    
   
-    
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -178,6 +182,7 @@ func initSubviews() {
         }
         else{
             if tableData == nil {
+                //UIScreen.main.bounds.height
         
                 tableData  = UITableView.init(frame: CGRect.init(x: frame.minX + 5 , y: frame.minY + frame.height, width: frame.width - 10, height:  CGFloat(15 * dataSourceItem.count)))
                 tableData.dataSource = self

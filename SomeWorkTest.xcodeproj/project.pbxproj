@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8102770D1F430D2E00208B6A /* Animator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8102770C1F430D2E00208B6A /* Animator.xib */; };
+		8102770F1F430D7700208B6A /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102770E1F430D7700208B6A /* Animator.swift */; };
+		8111738F1F45977400AB0581 /* SearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8111738E1F45977400AB0581 /* SearchBar.xib */; };
+		811173911F45982800AB0581 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811173901F45982800AB0581 /* SearchBar.swift */; };
+		811173941F45C56900AB0581 /* SearchText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811173931F45C56900AB0581 /* SearchText.swift */; };
+		811173961F45C59E00AB0581 /* SearchText.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811173951F45C59E00AB0581 /* SearchText.xib */; };
 		8111A4241F2DC88D006E9B23 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111A4231F2DC88D006E9B23 /* Toast.swift */; };
 		812BC0FA1F262AB80086EAA3 /* CustomeFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0F91F262AB80086EAA3 /* CustomeFontsView.swift */; };
 		812BC0FE1F2631540086EAA3 /* Besmellah_2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 812BC0FD1F2631540086EAA3 /* Besmellah_2.ttf */; };
@@ -108,6 +114,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8102770C1F430D2E00208B6A /* Animator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Animator.xib; sourceTree = "<group>"; };
+		8102770E1F430D7700208B6A /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		8111738E1F45977400AB0581 /* SearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchBar.xib; sourceTree = "<group>"; };
+		811173901F45982800AB0581 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		811173931F45C56900AB0581 /* SearchText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchText.swift; sourceTree = "<group>"; };
+		811173951F45C59E00AB0581 /* SearchText.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchText.xib; sourceTree = "<group>"; };
 		8111A4231F2DC88D006E9B23 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		812BC0F91F262AB80086EAA3 /* CustomeFontsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeFontsView.swift; sourceTree = "<group>"; };
 		812BC0FD1F2631540086EAA3 /* Besmellah_2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Besmellah_2.ttf; sourceTree = "<group>"; };
@@ -228,6 +240,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		811173921F459ED100AB0581 /* new group */ = {
+			isa = PBXGroup;
+			children = (
+				811173931F45C56900AB0581 /* SearchText.swift */,
+				811173901F45982800AB0581 /* SearchBar.swift */,
+				817B80CD1F14FB6900D6DBC9 /* PickerList.swift */,
+				8136A6111F13D18800D776D0 /* RatingBar.swift */,
+				81DB2F5D1F123EAE0087C7C2 /* DropDown.swift */,
+			);
+			name = "new group";
+			sourceTree = "<group>";
+		};
 		812BC0FB1F262B0A0086EAA3 /* custome fonts  */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,8 +429,8 @@
 				81BE84AC1EC854A50088FC8B /* external library */,
 				81B8D98C1EC4A55A00210399 /* sound work */,
 				818D4AA71EC34A1A00652A18 /* Xib files */,
-				818D4A891EC31C1800652A18 /* Extender OF UI */,
 				818D4A821EC31BC700652A18 /* Support uiView */,
+				818D4A891EC31C1800652A18 /* Extender OF UI */,
 				818D4A7F1EC31ACA00652A18 /* SingleTone */,
 				818D4A7C1EC3181800652A18 /* Bridging file */,
 				818D4A731EC3177C00652A18 /* Localize */,
@@ -546,14 +570,13 @@
 		818D4A821EC31BC700652A18 /* Support uiView */ = {
 			isa = PBXGroup;
 			children = (
+				811173921F459ED100AB0581 /* new group */,
 				813364FE1F31DB5A0032E5D3 /* sperate component */,
 				818D4ABF1EC3740E00652A18 /* ToastView.swift */,
 				818D4A831EC31C0F00652A18 /* DatePikerView.swift */,
 				818D4A841EC31C0F00652A18 /* dropDownList.swift */,
 				818D4A851EC31C0F00652A18 /* Loader.swift */,
-				81DB2F5D1F123EAE0087C7C2 /* DropDown.swift */,
-				8136A6111F13D18800D776D0 /* RatingBar.swift */,
-				817B80CD1F14FB6900D6DBC9 /* PickerList.swift */,
+				8102770E1F430D7700208B6A /* Animator.swift */,
 			);
 			name = "Support uiView";
 			sourceTree = "<group>";
@@ -592,6 +615,9 @@
 				81DB2F5B1F123C670087C7C2 /* DropDown.xib */,
 				8136A60D1F13CFB700D776D0 /* RatingBar.xib */,
 				817B80CB1F14FB2600D6DBC9 /* PickerList.xib */,
+				8102770C1F430D2E00208B6A /* Animator.xib */,
+				8111738E1F45977400AB0581 /* SearchBar.xib */,
+				811173951F45C59E00AB0581 /* SearchText.xib */,
 			);
 			name = "Xib files";
 			sourceTree = "<group>";
@@ -713,6 +739,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				812BC1531F2634180086EAA3 /* BEsfhnBd.ttf in Resources */,
+				8111738F1F45977400AB0581 /* SearchBar.xib in Resources */,
 				818D4AAC1EC34A3900652A18 /* dropDownList.xib in Resources */,
 				812BC1541F2634180086EAA3 /* Besmellah_2.ttf in Resources */,
 				812BC15A1F2634180086EAA3 /* Diwanltr.ttf in Resources */,
@@ -737,6 +764,7 @@
 				817B80CC1F14FB2600D6DBC9 /* PickerList.xib in Resources */,
 				812BC1521F2634180086EAA3 /* BElham.ttf in Resources */,
 				812BC14E1F2634180086EAA3 /* BArabics.ttf in Resources */,
+				811173961F45C59E00AB0581 /* SearchText.xib in Resources */,
 				812BC14A1F2634180086EAA3 /* ArabDances.ttf in Resources */,
 				812BC14D1F2634180086EAA3 /* ARABOLIC.TTF in Resources */,
 				818D4ABE1EC373F400652A18 /* Toast.xib in Resources */,
@@ -748,6 +776,7 @@
 				8171E8D51EC87C600085BC8A /* loader-02.png in Resources */,
 				81DB2F5C1F123C670087C7C2 /* DropDown.xib in Resources */,
 				812BC10A1F2633D80086EAA3 /* Taibaijan Italic.otf in Resources */,
+				8102770D1F430D2E00208B6A /* Animator.xib in Resources */,
 				8171E8D91EC87C600085BC8A /* loader-06.png in Resources */,
 				81B8D9921EC4A56D00210399 /* music2.mp3 in Resources */,
 				812BC10C1F2633D80086EAA3 /* Thabit.ttf in Resources */,
@@ -771,6 +800,7 @@
 				8136A6121F13D18800D776D0 /* RatingBar.swift in Sources */,
 				8111A4241F2DC88D006E9B23 /* Toast.swift in Sources */,
 				818D4A961EC31C2A00652A18 /* UITextFieldExtender.swift in Sources */,
+				8102770F1F430D7700208B6A /* Animator.swift in Sources */,
 				8183CD3E1EDD97A600667A18 /* PopAnimator.swift in Sources */,
 				818D4AA21EC3318900652A18 /* CustomPickerView.swift in Sources */,
 				812BC0FA1F262AB80086EAA3 /* CustomeFontsView.swift in Sources */,
@@ -794,6 +824,7 @@
 				817D59631F20B1F80084506D /* ChtarNetwork.swift in Sources */,
 				818D4A971EC31C2A00652A18 /* UIViewExtender.swift in Sources */,
 				818D4A911EC31C2A00652A18 /* Extenstion.swift in Sources */,
+				811173941F45C56900AB0581 /* SearchText.swift in Sources */,
 				8183CD4A1EDDAAB300667A18 /* HomeAnimatorController.swift in Sources */,
 				8171E8DC1EC8B7950085BC8A /* cellForCollectionView.swift in Sources */,
 				81DB2F5A1F123A700087C7C2 /* DropDownModel.swift in Sources */,
@@ -807,6 +838,7 @@
 				818D4A531EC3110C00652A18 /* AppDelegate.swift in Sources */,
 				816F004F1F3081A900EFDA11 /* tableContainCell.swift in Sources */,
 				818D4A651EC3123500652A18 /* LanguageChangeClass.swift in Sources */,
+				811173911F45982800AB0581 /* SearchBar.swift in Sources */,
 				818D4A861EC31C0F00652A18 /* DatePikerView.swift in Sources */,
 				81DB2F5E1F123EAE0087C7C2 /* DropDown.swift in Sources */,
 				818D4AA41EC331A000652A18 /* CustomPickerController.swift in Sources */,

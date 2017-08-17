@@ -187,6 +187,8 @@ UIAlertViewDelegate {
         
         
         Toast.init( "welcome to application ").Show()
+        
+        Animator.init(frame: CGRect.init(x: 40, y: 40, width: 100, height: 100)).Show()
     
     //ShowToast(title: "welcome", bodyMessage: "welcome to my view ")
     
